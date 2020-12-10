@@ -1,0 +1,50 @@
+﻿@model ContatoWeb.Models.Contato
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Registrar Contato</h2>
+
+<!-- login form -->
+<section class="w3l-login">
+    <div class="overlay">
+        <div class="wrapper">
+            <div class="logo">
+                <a class="brand-logo" href="Create.cshtml">Registrar Contato</a>
+            </div>
+            <div class="form-section">
+                <h3>Registre-se</h3>
+                <h6>Vamos adicionar seu contato</h6>
+                <form action="~/Contato/Index" method="post" class="signin-form">
+                    <div class="form-input">
+                        <input type="text" name="Nome" placeholder="Nome" required="" autofocus>
+                    </div>
+                    <div class="form-input">
+                        <input type="Text" name="Email" placeholder="Email" required="">
+                    </div>
+                    <label class="check-remaind">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p class="remember">Remember me</p>
+                    </label>
+                    <button type="submit" class="btn btn-primary theme-button mt-4">Registre-se</button>
+                    <div class="new-signup">
+                        <a href="#reload" class="signuplink">Esqueceu seu email?</a>
+                    </div>
+                </form>
+                <p class="signup">Não se registrou ainda?<a href="#signup.html" class="signuplink">Registre-se</a></p>
+            </div>
+        </div>
+    </div>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
+    <!-- copyright -->
+    <div class="copy-right">
+        <p>&copy; 2020 Snow Login Form. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3Layouts</a></p>
+    </div>
+    <!-- //copyright -->
+</section>
+
+<!-- /login form -->

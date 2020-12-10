@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ContatoWeb.Models.Contato>
+@{
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lista</title>
+</head>
+<body>
+<table>
+    @foreach (var contato in Model)
+    {
+        <tr>
+            <td>@contato.IdContato</td>
+            <td>@contato.Nome</td>
+            <td>@contato.Email</td>
+        </tr>
+    }
+</table>
+</body>
+</html>
